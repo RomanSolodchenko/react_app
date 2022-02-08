@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './Components/Header/Header';
+import Sidebar from './Components/Sidebar/Sidebar';
+import { BrowserRouter, Route } from "react-router-dom"
+import Todo from './Components/Todo/Todo';
+import News from './Components/News/News';
+import Crypto from './Components/Crypto/Crypto';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Sidebar />
+        <div>
+          <Route path="/Todo" component={Todo} />
+          <Route path="/News" component={News} />
+          <Route path="/Crypto" component={Crypto}/>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+
