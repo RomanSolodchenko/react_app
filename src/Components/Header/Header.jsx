@@ -10,7 +10,7 @@ const Header = () => {
           <img className="Header_logo_img_i" src="./Images/Logo.png"  alt="header_logo"/>
         </div>
         
-        <div className="Header_logo_text">DAY BOOK+</div>
+        <div className="Header_logo_text">DAY BOOK</div>
       
         <div><MTime /></div>
       </div>
