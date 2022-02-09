@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
-
 .News_block {
   display: flex;
   justify-content: space-around;
@@ -35,14 +33,12 @@
   border-radius: 10px;
 }
 
-
 .contacts {
   display: flex;
   justify-content: center;
   margin-top: 55px;
-  
-
 }
+
 .icon {
   width: 60px;
   height: 60px;

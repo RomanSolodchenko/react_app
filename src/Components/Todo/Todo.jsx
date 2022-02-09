@@ -47,11 +47,11 @@ class Todo extends Component {
     // copy the current list of items
     //скопируйте текущий список элементов
     const list = [...this.state.list];
+
     // filter the removed item
     //отфильтровать удаленный элемент
-
     const updatedList = list.filter((item) => item.id !== id);
-
+    
     // update the list after deleting the object
     //обновите список после удаления объекта
     this.setState({ list: updatedList });
@@ -94,8 +94,6 @@ class Todo extends Component {
             </ul>
           </div>
         </div>
-
-      
       </div>
     );
   }

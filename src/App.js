@@ -1,24 +1,16 @@
-// import React from 'react';
 import './App.css';
 import Header from './Components/Header/Header';
 import Sidebar from './Components/Sidebar/Sidebar';
-
-// import { BrowserRouter, Route } from "react-router-dom"
 import React, { Component } from 'react';
 import { HashRouter, Route } from "react-router-dom";
-
-
 import Todo from './Components/Todo/Todo';
 import News from './Components/News/News';
 import Crypto from './Components/Crypto/Crypto';
 
-
 class App extends Component {
 render () {
 
-// const App = () => {
   return (
-    // <BrowserRouter>
     <HashRouter basename="/">
       <div className="App">
         <Header />
@@ -30,9 +22,7 @@ render () {
         </div>
       </div>
       </HashRouter>
-    // </BrowserRouter>
   );
-// }
 }
 }
 export default App;
